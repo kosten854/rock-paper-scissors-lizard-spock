@@ -1,0 +1,29 @@
+.BattleDesk {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  align-items: stretch;
+  align-content: stretch;
+  flex: 9 0 100%;
+  background-color: #ccc;
+  color: #111;
+}
+
+.Decision {
+  flex: 0 1;
+
+  margin: auto;
+}
+
+.Player {
+  order: 0;
+}
+
+.Opponent {
+  order: 2;
+}
+
+.Opposition {
+  order: 1;
+}
