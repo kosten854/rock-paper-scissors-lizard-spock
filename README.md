@@ -1,6 +1,7 @@
 # rock-paper-scissors-lizard-spock
 For the start:
 >> npm i
+
 >> yarn run
 
 In the browser:
