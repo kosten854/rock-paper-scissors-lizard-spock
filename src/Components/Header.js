@@ -3,7 +3,7 @@ import "./App.css";
 
 class Header extends Component {
   render() {
-    return <header className="App-header" />;
+    return <header className="app-header">Комната "{this.props.text}"</header>;
   }
 }
 

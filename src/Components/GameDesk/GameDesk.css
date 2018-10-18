@@ -1,15 +1,46 @@
-.GameDesk {
+.game-desk {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  align-items: stretch;
-  align-content: stretch;
   flex-grow: 1;
   flex-basis: 100%;
-  background-color: #282c34;
+  background-color: #333333;
   margin: auto;
   font-size: calc(10px + 2vmin);
   min-width: 70vw;
   color: white;
+}
+
+.waiting {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.new-game__button {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex: none;
+  min-height: 15vh;
+  background-color: #999999;
+}
+
+.link {
+  color: #61dafb;
+}
+
+.waiting-icon {
+  animation: Waiting-icon-spin infinite 20s linear;
+}
+
+@keyframes Waiting-icon-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

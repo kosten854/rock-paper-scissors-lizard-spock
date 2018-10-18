@@ -6,7 +6,7 @@ class ChooseDesk extends Component {
   render() {
     const choosenElement = this.props.choosenElement;
     return (
-      <div className="ChooseDesk">
+      <div className="choose-desk">
         <Element name="stone.svg" choosenElement={choosenElement} />
         <Element name="sic.svg" choosenElement={choosenElement} />
         <Element name="paper.svg" choosenElement={choosenElement} />

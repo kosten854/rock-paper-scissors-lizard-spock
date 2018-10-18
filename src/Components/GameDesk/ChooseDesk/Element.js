@@ -1,28 +1,23 @@
 import React, { Component } from "react";
-// import BattleDesk from "../BattleDesk";
 
 import "./ChooseDesk.css";
 
 class Element extends Component {
-  state = {
-    isOpen: true
-  };
   render() {
     const name = this.props.name;
     return (
       <img
-        className="Element"
+        className="element__img"
         src={`images/${name}`}
         alt="click"
-        onClick={this.handleClick}
+        onClick={this._handleClick}
       />
     );
   }
-  handleClick = () => {
+  // When element was selected
+  _handleClick = () => {
     console.log(this.props.name);
     this.props.choosenElement(this.props.name);
-
-    // BattleDesk.choosen(this.props.name);
   };
 }
 

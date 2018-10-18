@@ -3,9 +3,10 @@ import "./BattleDesk.css";
 
 class Decision extends Component {
   render() {
-    const type = this.props.type;
     const name = this.props.name;
-    return <img className={`Decision ${type}`} alt="" src={`images/${name}`} />;
+    let type = this.props.type;
+    if (name === "waiting.svg") type += " waiting-icon";
+    return <img className={`decision ${type}`} alt="" src={`images/${name}`} />;
   }
 }
 

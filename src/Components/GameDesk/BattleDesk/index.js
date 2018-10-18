@@ -4,20 +4,14 @@ import "./BattleDesk.css";
 
 class BattleDesk extends Component {
   render() {
-    console.log("-------", this.props);
     return (
-      <div className="BattleDesk">
+      <div className="battle-desk">
         <Decision type="Player" name={this.props.playerChoosenElement} />
-        <Decision type="Opposition" name="vs.svg" />
-        <Decision type="Opponent" name="lizard.svg" />
+        <Decision type="Opposition" name={this.props.result} />
+        <Decision type="Opponent" name={this.props.opponentChoosenElement} />
       </div>
     );
   }
-  choosen = playerName => {
-    console.log("done ", playerName);
-    // this.props.playerName = playerName;
-    // this.setState(this.state);
-  };
 }
 
 export default BattleDesk;

@@ -3,7 +3,7 @@ import "./App.css";
 
 class Footer extends Component {
   render() {
-    return <footer className="App-footer" />;
+    return <footer className="app-footer">Комната "{this.props.text}"</footer>;
   }
 }
 
